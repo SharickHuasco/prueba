@@ -1,0 +1,59 @@
+/* Estilos generales para el calendario */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8deeb73;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #7b0c856b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del contenedor de eventos */
+#events-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Siete columnas para los días de la semana */
+    gap: 10px;
+    margin-top: 20px;
+    background-position-x: center;
+}
+
+/* Estilos para los días del calendario */
+.day {
+    background-color: #6695c9;
+    color: rgb(255, 251, 251);
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Estilos para las celdas de fechas (eventos) */
+.event {
+    background-color: #8f1bc531;
+    border: 1px solid #3d064b;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.event:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
